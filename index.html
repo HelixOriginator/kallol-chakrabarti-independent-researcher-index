@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kallol Chakrabarti | Official Submission 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy: #0b1f3a;
+  --navy2: #102445;
+  --navy3: #132a4d;
+  --navy4: #1a3560;
+  --blue: #4da6ff;
+  --blue2: #2d6cc0;
+  --saffron: #e8720c;
+  --saffron2: #f59340;
+  --text: #ffffff;
+  --text-muted: #aabbdc;
+  --border: rgba(77,166,255,0.25);
+  --green: #22c55e;
+  --green-bg: rgba(34,197,94,0.1);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--navy);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* TOP BANNER */
+.top-banner {
+  background: var(--saffron);
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 980px;
+  margin: auto;
+  padding: 0 20px 60px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 72px 20px 56px;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(42px, 8vw, 80px);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -1px;
+  margin-bottom: 6px;
+}
+
+.hero-name em {
+  color: var(--saffron);
+  font-style: normal;
+}
+
+.hero-role {
+  font-size: 13px;
+  color: var(--text-muted);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 36px;
+}
+
+.hero-claim {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(20px, 3.5vw, 30px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #fff;
+  max-width: 820px;
+  margin: 0 auto 20px;
+  border-left: 4px solid var(--saffron);
+  padding-left: 28px;
+  text-align: left;
+}
+
+.hero-claim strong { color: var(--saffron2); font-style: normal; font-weight: 600; }
+
+.hero-zeros {
+  display: inline-flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.zero-pill {
+  font-size: 12px;
+  color: var(--saffron2);
+  border: 1px solid rgba(232,114,12,0.4);
+  padding: 5px 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* SECTION */
+.section {
+  margin-top: 56px;
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 6px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section-title span {
+  color: var(--saffron);
+  font-size: 14px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* VALIDATION BLOCK */
+.validation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.validation-card {
+  background: var(--navy3);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--saffron);
+  padding: 22px 24px;
+}
+
+.validation-card .v-label {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--saffron2);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.validation-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.validation-card p strong { color: #fff; font-weight: 600; }
+
+.validation-card .v-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 12px;
+  color: var(--blue);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(77,166,255,0.3);
+  font-weight: 500;
+}
+
+/* YOUTUBE HIGHLIGHT */
+.youtube-block {
+  background: linear-gradient(135deg, #1a0a00 0%, #2d1500 100%);
+  border: 2px solid var(--saffron);
+  padding: 24px 28px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.yt-icon {
+  width: 52px;
+  height: 52px;
+  background: #ff0000;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 22px;
+}
+
+.yt-body { flex: 1; min-width: 200px; }
+
+.yt-body .yt-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--saffron2);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.yt-body .yt-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.yt-body .yt-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.yt-btn {
+  display: inline-block;
+  background: var(--saffron);
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+
+.yt-btn:hover { background: var(--saffron2); }
+
+/* PLATFORM GRID */
+.platform-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.platform-card {
+  background: var(--navy3);
+  border: 1px solid var(--border);
+  padding: 18px 16px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.platform-card:hover {
+  border-color: var(--blue);
+  background: var(--navy4);
+}
+
+.platform-card .p-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.platform-card .p-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.platform-card a {
+  font-size: 12px;
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(77,166,255,0.3);
+}
+
+.platform-card a:hover { border-color: var(--blue); }
+
+/* SCREENSHOT BUTTONS */
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.screenshot-btn {
+  background: var(--navy3);
+  color: white;
+  padding: 28px 20px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.screenshot-btn:hover {
+  border-color: var(--blue);
+  background: var(--navy4);
+  transform: translateY(-3px);
+}
+
+.screenshot-btn .btn-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.screenshot-btn .btn-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 400;
+  display: block;
+  margin-top: 6px;
+}
+
+/* METRICS */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.metric-card {
+  background: var(--navy3);
+  border: 1px solid var(--border);
+  padding: 22px 16px;
+  text-align: center;
+}
+
+.metric-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--saffron);
+  display: block;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.metric-lbl {
+  font-size: 11px;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.metric-link {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+/* CATEGORY GRID */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.cat-card {
+  background: var(--navy3);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--saffron);
+  padding: 18px 20px;
+  transition: background 0.2s;
+}
+
+.cat-card:hover { background: var(--navy4); }
+
+.cat-card .cat-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.cat-card .cat-detail {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.cat-card a {
+  font-size: 11px;
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(77,166,255,0.3);
+}
+
+/* IMPORTANT LINKS */
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.link-btn {
+  display: block;
+  background: var(--navy3);
+  color: white;
+  padding: 16px 20px;
+  text-decoration: none;
+  border: 1px solid var(--border);
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s;
+  font-family: 'Outfit', sans-serif;
+}
+
+.link-btn:hover {
+  background: var(--navy4);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.link-btn .lb-arrow {
+  float: right;
+  color: var(--text-muted);
+  font-weight: 300;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(11,31,58,0.96);
+}
+
+.modal.open { display: flex; align-items: center; justify-content: center; }
+
+.modal-inner {
+  position: relative;
+  max-width: 92%;
+  max-height: 90vh;
+  border: 2px solid var(--saffron);
+}
+
+.modal-inner img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+}
+
+.modal-caption {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 14px 20px;
+  font-size: 15px;
+  background: var(--navy2);
+}
+
+.modal-close {
+  position: absolute;
+  top: -44px;
+  right: 0;
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: sans-serif;
+  line-height: 1;
+}
+
+.modal-close:hover { color: var(--saffron); }
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 72px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.footer-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.footer p { font-size: 13px; margin-bottom: 4px; }
+
+.footer a { color: var(--blue); text-decoration: none; }
+
+.footer-note {
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgba(170,187,220,0.5);
+  font-style: italic;
+}
+
+/* ANIMATIONS */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero { animation: fadeUp 0.6s ease forwards; }
+
+@media (max-width: 640px) {
+  .validation-grid { grid-template-columns: 1fr; }
+  .hero-claim { border-left: 3px solid var(--saffron); padding-left: 16px; }
+  .youtube-block { flex-direction: column; gap: 14px; }
+  .yt-btn { width: 100%; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<div class="top-banner">Official Submission 2026 &nbsp;·&nbsp; Kallol Chakrabarti &nbsp;·&nbsp; Lucknow, U.P., India</div>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-name">Kallol<br><em>Chakrabarti</em></div>
+    <div class="hero-role">Independent, Unaffiliated Citizen Researcher &nbsp;·&nbsp; Lucknow, India</div>
+    <blockquote class="hero-claim">
+      "Most international academic, governmental, and blockchain platforms simultaneously indexing the original work of a single individual, developed without institutional affiliation, co-authorship, or external funding."
+    </blockquote>
+    <div class="hero-zeros">
+      <span class="zero-pill">Zero institutional affiliation</span>
+      <span class="zero-pill">Zero co-authorship</span>
+      <span class="zero-pill">Zero external funding</span>
+    </div>
+  </div>
+
+  <!-- INDEPENDENT VALIDATION -->
+  <div class="section">
+    <div class="section-title">Independent Validation <span>Unsolicited · Third-Party · Government-Backed</span></div>
+
+    <div class="validation-grid">
+      <div class="validation-card">
+        <div class="v-label">UK Government · University of Sussex</div>
+        <p><strong>Metascience Unit (UKRI)</strong> — Research independently identified and cited. Direct personalised invitation as expert evaluator — unsolicited, no intermediary.</p>
+        <a class="v-link" href="https://helixoriginator.github.io/Screenshots-Institutions-Kallol-Chakrabarti-Validation/" target="_blank">View institutional validation screenshots →</a>
+      </div>
+      <div class="validation-card">
+        <div class="v-label">Government of India</div>
+        <p><strong>National IP Awards 2026</strong> — Applied under O/o CGPDTM · Attended as active participant at Bharat Mandapam, New Delhi, 9th March 2026. 25 Registered Copyrights (IP India). Provisional Patent No. 202411090481.</p>
+        <a class="v-link" href="https://helixoriginator.github.io/National-IP-Verified-Policy-Registry/" target="_blank">View IP India Registry →</a>
+      </div>
+    </div>
+
+    <!-- YOUTUBE BLOCK -->
+    <div class="youtube-block">
+      <div class="yt-icon">▶</div>
+      <div class="yt-body">
+        <div class="yt-label">Live Government of India Event — Timestamped Public Record</div>
+        <div class="yt-title">Nano Banana Protocol — National IP Awards 2026</div>
+        <div class="yt-sub">National IP Awards 2026 · Bharat Mandapam, New Delhi &nbsp;·&nbsp; Timestamp: 51 minutes 19 seconds &nbsp;·&nbsp; Government of India · Sovereign public record</div>
+      </div>
+      <a class="yt-btn" href="https://www.youtube.com/live/lVu3AAtLoCQ?si=JAo0d79h7xgOu3NM&t=3079" target="_blank">Watch at 51:19 →</a>
+    </div>
+  </div>
+
+  <!-- PLATFORM VERIFICATION -->
+  <div class="section">
+    <div class="section-title">Platform Verification <span>All links open publicly — no login required</span></div>
+    <div class="platform-grid">
+      <div class="platform-card">
+        <div class="p-name">Zenodo — CERN</div>
+        <div class="p-desc">264 DOI frameworks · EU scientific infrastructure · permanent archive</div>
+        <a href="https://zenodo.org/records/16714489" target="_blank">View on Zenodo →</a>
+      </div>
+      <div class="platform-card">
+        <div class="p-name">OpenAIRE</div>
+        <div class="p-desc">European Union research index · independent DOI cross-validation</div>
+        <a href="https://explore.openaire.eu/search/result?pid=10.5281%2Fzenodo.16714489" target="_blank">View on OpenAIRE →</a>
+      </div>
+      <div class="platform-card">
+        <div class="p-name">SSRN — Elsevier</div>
+        <div class="p-desc">Top 4.6% of 27 million authors globally · Author Rank 122,618</div>
+        <a href="https://helixoriginator.github.io/kallol-chakrabarti-ssrn-figshare-knowledgecommons-research/" target="_blank">View SSRN Archive →</a>
+      </div>
+      <div class="platform-card">
+        <div class="p-name">IP India</div>
+        <div class="p-desc">Government of India · 25 registered copyrights · Provisional Patent No. 202411090481</div>
+        <a href="https://helixoriginator.github.io/National-IP-Verified-Policy-Registry/" target="_blank">View IP Registry →</a>
+      </div>
+      <div class="platform-card">
+        <div class="p-name">DeSci Labs</div>
+        <div class="p-desc">Blockchain-verified · 94.9% avg novelty · 4 frameworks at 100%</div>
+        <a href="https://world-first-of-its-kind-novel-concept.netlify.app/" target="_blank">View Novelty Registry →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- VERIFICATION SCREENSHOTS -->
+  <div class="section">
+    <div class="section-title">Verification Screenshots <span>Click to view authenticated evidence</span></div>
+    <div class="screenshot-grid">
+      <button class="screenshot-btn" onclick="openModal('ssrn.png', 'SSRN Author Dashboard — Author ID: 7407085 — Top 4.6% globally among 27 million researchers')">
+        <span class="btn-icon">📊</span>
+        SSRN Author Profile
+        <span class="btn-sub">Author ID 7407085 · Top 4.6%</span>
+      </button>
+      <button class="screenshot-btn" onclick="openModal('zenodo.png', 'Zenodo Publication — Invisible Shield: A Smart Border Security Solution — Peer reviewed, ARAIS community')">
+        <span class="btn-icon">📄</span>
+        Zenodo Publication
+        <span class="btn-sub">Peer-reviewed · CERN archived</span>
+      </button>
+      <button class="screenshot-btn" onclick="openModal('semantic.png', 'Semantic Scholar Research Dashboard — 4 Publications, 14 Citations')">
+        <span class="btn-icon">🧠</span>
+        Semantic Scholar Metrics
+        <span class="btn-sub">4 publications · 14 citations</span>
+      </button>
+      <button class="screenshot-btn" onclick="openModal('email.png', 'UK Government Metascience Unit — University of Sussex — Direct expert invitation citing paper by name')">
+        <span class="btn-icon">✉️</span>
+        Expert Recognition Email
+        <span class="btn-sub">UK Govt · University of Sussex</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- KEY METRICS -->
+  <div class="section">
+    <div class="section-title">Key Metrics <span>All independently countable and verifiable</span></div>
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <span class="metric-val">264</span>
+        <span class="metric-lbl">DOI Frameworks</span>
+        <a class="metric-link" href="https://zenodo.org/records/16714489" target="_blank">View Archive</a>
+      </div>
+      <div class="metric-card">
+        <span class="metric-val">390+</span>
+        <span class="metric-lbl">Websites Built</span>
+        <a class="metric-link" href="https://kallol-241-repositories.netlify.app/" target="_blank">View Index</a>
+      </div>
+      <div class="metric-card">
+        <span class="metric-val">241+</span>
+        <span class="metric-lbl">Repositories</span>
+        <a class="metric-link" href="https://kallol-241-repositories.netlify.app/" target="_blank">View Index</a>
+      </div>
+      <div class="metric-card">
+        <span class="metric-val">5.5K+</span>
+        <span class="metric-lbl">Downloads</span>
+        <a class="metric-link" href="https://kallol-world-largest-digital-library.netlify.app/" target="_blank">Digital Library</a>
+      </div>
+      <div class="metric-card">
+        <span class="metric-val">4.6%</span>
+        <span class="metric-lbl">SSRN Global Rank</span>
+        <a class="metric-link" href="https://orcid.org/0009-0007-4971-8936" target="_blank">ORCID Profile</a>
+      </div>
+      <div class="metric-card">
+        <span class="metric-val">94.9%</span>
+        <span class="metric-lbl">Avg Novelty Score</span>
+        <a class="metric-link" href="https://world-first-of-its-kind-novel-concept.netlify.app/" target="_blank">View Registry</a>
+      </div>
+      <div class="metric-card">
+        <span class="metric-val">25</span>
+        <span class="metric-lbl">IP India Copyrights</span>
+        <a class="metric-link" href="https://helixoriginator.github.io/National-IP-Verified-Policy-Registry/" target="_blank">IP Registry</a>
+      </div>
+      <div class="metric-card">
+        <span class="metric-val">10</span>
+        <span class="metric-lbl">Published Works</span>
+        <a class="metric-link" href="https://helixoriginator.github.io/kallol-chakrabarti-books/" target="_blank">View Books</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMPORTANT LINKS -->
+  <div class="section">
+    <div class="section-title">Important Links</div>
+    <div class="links-grid">
+      <a class="link-btn" href="https://helixoriginator.github.io/kallol-limca-master-research-index/" target="_blank">Master Submission File <span class="lb-arrow">→</span></a>
+      <a class="link-btn" href="https://orcid.org/0009-0007-4971-8936" target="_blank">ORCID Profile <span class="lb-arrow">→</span></a>
+      <a class="link-btn" href="https://zenodo.org/records/16714489" target="_blank">Zenodo Archive <span class="lb-arrow">→</span></a>
+      <a class="link-btn" href="https://helixoriginator.github.io/Screenshots-Institutions-Kallol-Chakrabarti-Validation/" target="_blank">Evidence Vault <span class="lb-arrow">→</span></a>
+      <a class="link-btn" href="https://helixoriginator.github.io/National-IP-Verified-Policy-Registry/" target="_blank">IP India Registry <span class="lb-arrow">→</span></a>
+      <a class="link-btn" href="https://kallol-241-repositories.netlify.app/" target="_blank">241 Repository Index <span class="lb-arrow">→</span></a>
+    </div>
+  </div>
+
+  <!-- CATEGORY SUMMARY — NOW WITH LINKS -->
+  <div class="section">
+    <div class="section-title">Category Summary <span>9 Categories · All with evidence links</span></div>
+    <div class="category-grid">
+      <div class="cat-card">
+        <div class="cat-name">Research Novelty — UK Government</div>
+        <div class="cat-detail">Cited by UK Govt Metascience Unit & University of Sussex · direct expert invitation</div>
+        <a href="https://helixoriginator.github.io/Screenshots-Institutions-Kallol-Chakrabarti-Validation/" target="_blank">View Evidence →</a>
+      </div>
+      <div class="cat-card">
+        <div class="cat-name">Government IP & Publications</div>
+        <div class="cat-detail">25 IP India copyrights · Provisional Patent No. 202411090481 · 10 published works · Active participant, National IP Awards 2026, Bharat Mandapam</div>
+        <a href="https://helixoriginator.github.io/National-IP-Verified-Policy-Registry/" target="_blank">View IP Registry →</a>
+      </div>
+      <div class="cat-card">
+        <div class="cat-name">DOI-Registered Frameworks</div>
+        <div class="cat-detail">264 independently authored frameworks · CERN, Figshare, OSF, SSRN, Knowledge Commons</div>
+        <a href="https://zenodo.org/records/16714489" target="_blank">View on Zenodo →</a>
+      </div>
+      <div class="cat-card">
+        <div class="cat-name">Digital Infrastructure</div>
+        <div class="cat-detail">390+ websites · 241+ repositories · built solo · zero institutional support</div>
+        <a href="https://kallol-241-repositories.netlify.app/" target="_blank">View Index →</a>
+      </div>
+      <div class="cat-card">
+        <div class="cat-name">Global Research Ranking</div>
+        <div class="cat-detail">Top 4.6% on SSRN among 27 million authors · Author Rank 122,618 · Elsevier platform</div>
+        <a href="https://helixoriginator.github.io/kallol-chakrabarti-ssrn-figshare-knowledgecommons-research/" target="_blank">View SSRN Archive →</a>
+      </div>
+      <div class="cat-card">
+        <div class="cat-name">Blockchain Novelty Score</div>
+        <div class="cat-detail">94.9% average · 4 frameworks at perfect 100% · DeSci Labs · blockchain-permanent</div>
+        <a href="https://world-first-of-its-kind-novel-concept.netlify.app/" target="_blank">View Registry →</a>
+      </div>
+      <div class="cat-card">
+        <div class="cat-name">AI Platforms for Policy</div>
+        <div class="cat-detail">Opal AI · PMAY Policy AI · PM-Kisan Framework · citizen-built · Google-hosted</div>
+        <a href="https://helixoriginator.github.io/pmay-policy-clarification-ai/" target="_blank">View Platforms →</a>
+      </div>
+      <div class="cat-card">
+        <div class="cat-name">Peer-Reviewed Publication</div>
+        <div class="cat-detail">Invisible Shield — ARAIS community · Zenodo · Jan 2025 · peer-reviewed open-access</div>
+        <a href="https://zenodo.org/records/14632981" target="_blank">View on Zenodo →</a>
+      </div>
+      <div class="cat-card">
+        <div class="cat-name">Nano Banana Protocol</div>
+        <div class="cat-detail">World's first zero-cost defensive publication protocol · actively participated at National IP Awards 2026, Bharat Mandapam, New Delhi</div>
+        <a href="https://helixoriginator.github.io/nano-banana/" target="_blank">View Protocol →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-name">Kallol Chakrabarti</div>
+    <p>Independent Citizen Researcher &nbsp;·&nbsp; Lucknow, Uttar Pradesh, India</p>
+    <p>ORCID: <a href="https://orcid.org/0009-0007-4971-8936" target="_blank">0009-0007-4971-8936</a></p>
+    <p class="footer-note">All claims are independently verifiable through publicly accessible platforms. No login required.</p>
+  </div>
+
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal" onclick="closeModalBg(event)">
+  <div class="modal-inner">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <img id="modal-img" src="" alt="Evidence Screenshot">
+    <div class="modal-caption" id="modal-caption"></div>
+  </div>
+</div>
+
+<script>
+function openModal(src, caption) {
+  document.getElementById('modal-img').src = src;
+  document.getElementById('modal-caption').textContent = caption;
+  document.getElementById('modal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  document.getElementById('modal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function closeModalBg(e) {
+  if (e.target === document.getElementById('modal')) closeModal();
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeModal();
+});
+</script>
+
+</body>
+</html>
