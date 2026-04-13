@@ -1,5 +1,6 @@
 # 📊 Independent Researcher Multi-Platform Index
-> **Kallol Chakrabarti** · Lucknow, Uttar Pradesh, India · [ORCID](https://orcid.org/0009-0007-4971-8936)
+> **Kallol Chakrabarti** · Lucknow, Uttar Pradesh, India  
+> 📧 kallolchitralimagicpen@gmail.com · [ORCID: 0009-0007-4971-8936](https://orcid.org/0009-0007-4971-8936)
 
 ---
 
@@ -15,7 +16,7 @@ This repository serves as a centralized, publicly verifiable index documenting t
 |:---|:---|:---|
 | DOI Frameworks | 264 | [Zenodo (CERN)](https://zenodo.org/records/16714489) |
 | Public Repositories | 241+ | [Repository Index](https://kallol-241-repositories.netlify.app/) |
-| Websites Built | 390+ | [Digital Library](https://kallol-world-largest-digital-library.netlify.app/) |
+| Websites Built | 400+ | [Digital Library](https://kallol-world-largest-digital-library.netlify.app/) |
 | SSRN Global Rank | Top 4.6% (27M+ authors) | [SSRN Archive](https://helixoriginator.github.io/kallol-chakrabarti-ssrn-figshare-knowledgecommons-research/) |
 | IP India Copyrights | 25 Registered | [IP Registry](https://helixoriginator.github.io/National-IP-Verified-Policy-Registry/) |
 | Provisional Patent | 202411090481 | [IP Registry](https://helixoriginator.github.io/National-IP-Verified-Policy-Registry/) |
@@ -63,11 +64,6 @@ This index is structured for transparency and third-party verification:
 - ⚖️ [IP India Registry](https://helixoriginator.github.io/National-IP-Verified-Policy-Registry/)
 - 💻 [241 Repository Index](https://kallol-241-repositories.netlify.app/)
 
----
-
-## 📜 Disclaimer & Verification Policy
-All claims, metrics, and citations documented here are independently verifiable through publicly accessible platforms. This work was produced without institutional affiliation, co-authorship, or external funding. Third-party platforms host and index the content autonomously. No intermediary was used for recognition, submission, or evaluation.
-
-**Contact for Verification**: `kallol.chakrabarti[at]protonmail.com` *(placeholder)*  
+**Contact**: kallolchitralimagicpen@gmail.com  
 **Location**: Lucknow, Uttar Pradesh, India  
 **Last Updated**: April 2026
