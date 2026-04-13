@@ -1,0 +1,6 @@
+# robots.txt for HelixOriginator GitHub Pages
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://helixoriginator.github.io/kallol-chakrabarti-independent-researcher-index/sitemap.xml
